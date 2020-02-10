@@ -40,6 +40,7 @@ westDist = [620,470,164,342,356,184,331,322,461,620]
 
 bigList = [thalLine, korrLine, flamLine, eastLine, karrLine, westLine]
 
+
 bigNames = ["Thaliost Line","Korranberg Line","Flamekeep Line","Eastern Line","Karrnath Line","Flamekeep-Thaliost Line"]
 
 bigDist = [thalDist, korrDist, flamDist, eastDist, karrDist, westDist]
@@ -48,6 +49,7 @@ bigDist = [thalDist, korrDist, flamDist, eastDist, karrDist, westDist]
 while True:
 
     stop1 = input("Please enter the first stop: ").title()
+
 
     stop2 = input("Please enter the second stop: ").title()
     
@@ -105,4 +107,6 @@ while True:
 
         print("Standard Fare: "+str(round(distance*0.2,2)))
 
+
         print("First Class Fare: "+str(round(distance*0.5,2)))
+
