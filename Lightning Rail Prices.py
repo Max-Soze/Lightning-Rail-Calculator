@@ -24,7 +24,7 @@ while anotha == "yes":
 
     print("Enter 'list' if you need a list of all operating Lightning Rail Stations")
 
-    stop1 = input("Please enter the first stop: ")
+    stop1 = input("Please enter the first stop: ").title()
 
     if stop1 == "list":
         print("Stations in Aundair: Fairhaven, Marketplace, Passage")
@@ -36,7 +36,7 @@ while anotha == "yes":
         print("Stations in Zilargo: Korranberg, Zolanberg")
         stop1 = input("Please enter the first stop: ")
 
-    stop2 = input("Please enter the second stop: ")
+    stop2 = input("Please enter the second stop: ").title()
 
     if stop1 in thalLine and stop2 in thalLine:
         line = "Thaliost Line"
