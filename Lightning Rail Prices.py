@@ -111,3 +111,4 @@ while True:
         print("Standard Fare: "+str(round(distance*0.2,2)))
 
         print("First Class Fare: "+str(round(distance*0.5,2)))
+
