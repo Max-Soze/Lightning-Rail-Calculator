@@ -26,7 +26,7 @@ while anotha == "yes":
 
     stop1 = input("Please enter the first stop: ").title()
 
-    if stop1 == "list":
+    if stop1 == "List":
         print("Stations in Aundair: Fairhaven, Marketplace, Passage")
         print("Stations in Breland: Hatheril, Sharn, Starilaskur, Sternagte, Sword Keep, Vathirond, Wroat")
         print("Stations in Karrnath: Atur, Fort Zombie, Irontown, Korth, Rekkenmark, Vedykar, Vulyar")
