@@ -35,7 +35,7 @@ while y == 0:
     while z == 0: 
         i += 1        
         if i != len(bigList):
-            print("checking {}".format(bigNames[i]))
+            print("Checking {}".format(bigNames[i]))
             if stop1 and stop2 in bigList[i]:
                 line = bigNames[i]
                 dig1 = bigList[i].index(stop1)
