@@ -26,9 +26,9 @@ while anotha == "yes":
 
     stop1 = input("Please enter the first stop: ").title()
 
-    if stop1 == "list":
+    if stop1 == "List":
         print("Stations in Aundair: Fairhaven, Marketplace, Passage")
-        print("Stations in Breland: Hatheril, Sharn, Starilaskur, Sternagte, Sword Keep, Vathirond, Wroat")
+        print("Stations in Breland: Hatheril, Sharn, Starilaskur, Sterngate, Sword Keep, Vathirond, Wroat")
         print("Stations in Karrnath: Atur, Fort Zombie, Irontown, Korth, Rekkenmark, Vedykar, Vulyar")
         print("Stations in the Mror Holds: Krona Peak")
         print("Stations in the Talenta Plains: Gatherhold")
@@ -86,8 +86,8 @@ while anotha == "yes":
     print("\nThese stops are on the "+line+".")
 
     print("The distance between "+stop1+" and "+stop2+" is "+str(distance)+" miles. The travel time is "+str(round(distance/30,2))+" hours.")
-    print("Steerage Fare: "+str(round(distance*0.03, 2)))
-    print("Standard Fare: "+str(round(distance*0.2,2)))
-    print("First Class Fare: "+str(round(distance*0.5,2)))
+    print("Steerage Fare: "+str(round(distance*0.03, 2))+"gp")
+    print("Standard Fare: "+str(round(distance*0.2,2))+"gp")
+    print("First Class Fare: "+str(round(distance*0.5,2))+"gp")
 
     anotha = input("Enter another ticket [yes/no]: ")
