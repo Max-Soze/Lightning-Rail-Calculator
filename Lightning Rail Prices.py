@@ -49,11 +49,11 @@ while True:
 
     stop1 = input("Please enter the first stop: ").title()
     while stop1 not in allNames:
-        stop1 = input("Uknown station, please try again: ").title()
+        stop1 = input("Unknown station, please try again: ").title()
     print("First stop is: {}".format((stop1).upper()))
     stop2 = input("Please enter the second stop: ").title()
     while stop2 not in allNames:
-        stop2 = input("Uknown station, please try again: ").title()
+        stop2 = input("Unknown station, please try again: ").title()
     print("Final stop is: {}".format((stop2).upper()))
     
     print("\n")
