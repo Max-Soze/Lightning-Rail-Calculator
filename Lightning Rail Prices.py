@@ -8,7 +8,7 @@ def totDist(digg1, stopps, dists):
 
     return tote
 
-
+allNames = ["Aruldusk", "Atur", "Fairhaven", "Flamekeep", "Fort Zombie", "Gatherhold", "Hatheril", "Irontown", "Korranberg", "Korth", "Krona Peak", "Marketplace", "Passage", "Rekkenmark", "Sharn", "Sigilstar", "Starilaskur", "Sterngate", "Sword Keep", "Thaliost", "Vathirond", "Vedykar", "Vulyar", "Wroat", "Zolanberg"]
 
 thalLine = ["Sharn","Wroat","Hatheril","Sword Keep","Marketplace","Passage","Fairhaven","Thaliost"]
 
@@ -40,18 +40,21 @@ westDist = [620,470,164,342,356,184,331,322,461,620]
 
 bigList = [thalLine, korrLine, flamLine, eastLine, karrLine, westLine]
 
-
 bigNames = ["Thaliost Line","Korranberg Line","Flamekeep Line","Eastern Line","Karrnath Line","Flamekeep-Thaliost Line"]
 
 bigDist = [thalDist, korrDist, flamDist, eastDist, karrDist, westDist]
-
-
+    
+    
 while True:
 
     stop1 = input("Please enter the first stop: ").title()
-
-
+    while stop1 not in allNames:
+        stop1 = input("Unknown station, please try again: ").title()
+    print("First stop is: {}".format((stop1).upper()))
     stop2 = input("Please enter the second stop: ").title()
+    while stop2 not in allNames:
+        stop2 = input("Unknown station, please try again: ").title()
+    print("Final stop is: {}".format((stop2).upper()))
     
     print("\n")
 
@@ -106,7 +109,6 @@ while True:
         print("Steerage Fare: "+str(round(distance*0.03, 2)))
 
         print("Standard Fare: "+str(round(distance*0.2,2)))
-
 
         print("First Class Fare: "+str(round(distance*0.5,2)))
 
