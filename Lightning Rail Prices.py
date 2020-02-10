@@ -45,12 +45,7 @@ bigNames = ["Thaliost Line","Korranberg Line","Flamekeep Line","Eastern Line","K
 bigDist = [thalDist, korrDist, flamDist, eastDist, karrDist, westDist]
 
 
-
-
-
-y = 0
-
-while y == 0:
+while True:
 
     stop1 = input("Please enter the first stop: ").title()
 
@@ -62,13 +57,11 @@ while y == 0:
 
     i = -1
 
-    z = 0
-
     route = 0
 
 
 
-    while z == 0: 
+    while True: 
 
         i += 1        
 
